@@ -1,0 +1,44 @@
+/* Fullscreen Readability */
+
+/* hide tools */
+#readTools * {
+  visibility: hidden;
+}
+
+#readTools:hover * {
+  visibility: visible !important;
+}
+
+#readInner h1 {
+  outline: none;
+}
+
+/* thin scrollbar */
+body {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+body, html {
+  overflow-y: auto;
+}
+
+::-webkit-scrollbar {
+  width: 2px;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+  height: 50px;
+  background-color: #858789;
+}
+
+::-webkit-scrollbar-track {
+  background-color: inherit;
+}
+
+::-webkit-scrollbar-corner {
+  display: none;
+}
